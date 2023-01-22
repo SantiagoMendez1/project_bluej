@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Postulacion
+comment0.text=\n\ Write\ a\ description\ of\ class\ Postulaci\u00F3n\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=pasantia\ aspirante\ fechaPostulacion\ estado
+comment1.target=Postulacion(java.lang.String,\ java.lang.String,\ java.time.LocalDateTime,\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Postulaci\u00F3n\n
+comment2.params=
+comment2.target=java.lang.String\ getPasantia()
+comment3.params=
+comment3.target=java.lang.String\ getAspirante()
+comment4.params=
+comment4.target=java.time.LocalDateTime\ getFechaPostulacion()
+comment5.params=
+comment5.target=java.lang.String\ getEstado()
+numComments=6

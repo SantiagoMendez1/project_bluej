@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Estudiante
+comment0.text=\n\ Write\ a\ description\ of\ class\ Estudiante\ here.\n\ \n\ @author\ (Henry\ Mantilla,\ Santiago\ Mendez)\ \n\ @version\ (1.0)\n
+comment1.params=nombre\ universidad\ curriculum
+comment1.target=Estudiante(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Estudiante\n
+comment2.params=
+comment2.target=java.lang.String\ getNombreEstudiante()
+comment3.params=
+comment3.target=java.lang.String\ getUniversidad()
+comment4.params=
+comment4.target=java.lang.String\ getCurriculum()
+comment5.params=pasantia\ aspirante
+comment5.target=boolean\ realizarPostulacion(java.lang.String,\ java.lang.String)
+numComments=6
