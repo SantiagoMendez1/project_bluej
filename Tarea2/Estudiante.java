@@ -1,4 +1,8 @@
-import java.util.ArrayList; 
+import java.util.ArrayList;
+import java.util.List; 
+import java.util.Collections;
+import java.lang.*;
+import java.util.stream.Collectors;  
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;
 /**
@@ -44,20 +48,21 @@ public class Estudiante extends Usuario
         
         LocalDateTime fecha = java.time.LocalDateTime.now();
         postulaciones.add(new Postulacion(pasantia, aspirante, fecha, "enviado"));
-        System.out.print(postulaciones.get(1));
+        //System.out.print(postulaciones.get(1));
         return true;
     }
-/*  
+  
     public int getNumeroDePostulaciones(){
+        return postulaciones.size();
+    }
+    
+    public ArrayList<Pasantia> buscarPasantia(String palabraClave){
         
     }
     
-    public ArrayList<Pasantia> buscarPasantia(){
-        
+    public boolean cancelarPostulacion(String pasantia){
+        postulaciones.remove(pasantia);
+        return true;
     }
     
-    public boolean cancelarPostulacion(){
-        
-    }
-    */
 }
