@@ -23,11 +23,12 @@ public class Estudiante extends Usuario
     /**
      * Constructor for objects of class Estudiante
      */
-    public Estudiante(String nombre, String universidad, String curriculum)
+    public Estudiante(String nombre, String direccion, String descripcion, String correo, String telefono, String contrasenia, String foto,
+    int tipoUsuario, String universidad, String curriculum)
     {
+        super(nombre, direccion, descripcion, correo, telefono, contrasenia, foto, tipoUsuario);
         this.universidad = universidad;
         this.curriculum = curriculum;
-        this.nombre = nombre;
         postulaciones = new ArrayList<Postulacion>();
         pasantias = new ArrayList<Pasantia>();
     }
@@ -56,9 +57,9 @@ public class Estudiante extends Usuario
         return postulaciones.size();
     }
     
-    public ArrayList<Pasantia> buscarPasantia(String palabraClave){
+    //public ArrayList<Pasantia> buscarPasantia(String palabraClave){
         
-    }
+    //}
     
     public boolean cancelarPostulacion(String pasantia){
         postulaciones.remove(pasantia);

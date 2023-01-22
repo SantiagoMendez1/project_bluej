@@ -13,14 +13,15 @@ public abstract class Usuario
     private String descripcion;
     private String correo;
     private String telefono;
-    private String contraseña;
+    private String contrasenia;
     private String foto;
-    private boolean esEstudiante;
+    private int tipoUsuario;
 
     /**
      * Constructor for objects of class Usuario
      */
-    public Usuario()
+    public Usuario( String nombre, String direccion, String descripcion, String correo, String telefono, String contrasenia, String foto,
+    int tipoUsuario)
     {
         // initialise instance variables
         this.nombre = nombre;
@@ -28,8 +29,9 @@ public abstract class Usuario
         this.descripcion = descripcion;
         this.correo = correo;
         this.telefono = telefono;
-        this.contraseña = contraseña;
+        this.contrasenia = contrasenia;
         this.foto = foto;
+        this.tipoUsuario = tipoUsuario;
     }
     
     public String getNombre()
@@ -54,11 +56,15 @@ public abstract class Usuario
         return telefono;
     }
     
-    public String getContraseña(){
-        return contraseña;
+    public String getContrasenia(){
+        return contrasenia;
     }
     
     public String getFoto(){
         return foto;
+    }
+    
+    public int gettipoUsuario(){
+        return tipoUsuario;
     }
 }
