@@ -13,9 +13,10 @@ public class EmpresaInstitucion extends Usuario
     /**
      * Constructor for objects of class EmpresaInstitución
      */
-    public EmpresaInstitucion()
+    public EmpresaInstitucion(String nombre, String direccion, String descripcion, String correo, String telefono, String contrasenia, String foto,
+    int tipoUsuario)
     {
-        // initialise instance variables
+        super(nombre, direccion, descripcion, correo, telefono, contrasenia, foto, tipoUsuario);
         this.webpage = webpage;
     }
 

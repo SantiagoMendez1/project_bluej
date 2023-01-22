@@ -14,23 +14,42 @@ public class main
         
         Scanner scaner = new Scanner(System.in);
         
-        int option = 1;
+        boolean salir = false;
+        int option;
         
-        while (option != 0){
+        while (!salir){
         
-            System.out.println("hola, por favor ingresa la opcion que desees");
             System.out.println("1. Crear usuario");
             System.out.println("2. Crear pasantia");
             System.out.println("3. Postular pasantia");
             System.out.println("4. Consultar pasantias");
             System.out.println("5. Consultar postulaciones");
-            System.out.println("0. Salir");
+            System.out.println("6. Salir");
+            
+            System.out.println("hola, por favor ingresa la opcion que desees");
             option = scaner.nextInt();
             
             switch (option) { 
                 case 1:
+                     System.out.println("nombre:");
+                     String nombre = scaner.nextLine();
+                    break;
+                case 2:
                      
-                break;
+                    break;
+                case 3:
+                    
+                    break;
+                case 4:
+                     
+                    break;
+                case 5:
+                     
+                    break;
+                case 6:
+                     salir = true;
+                    break;
+        
         
         
             }
