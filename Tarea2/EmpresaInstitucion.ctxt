@@ -1,8 +1,7 @@
 #BlueJ class context
 comment0.target=EmpresaInstitucion
-comment0.text=\n\ Write\ a\ description\ of\ class\ EmpresaInstituci\u00F3n\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=EmpresaInstitucion()
+comment1.params=id\ nombre\ direccion\ descripcion\ correo\ telefono\ contrasenia\ foto\ tipoUsuario
+comment1.target=EmpresaInstitucion(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ EmpresaInstituci\u00F3n\n
 comment2.params=
 comment2.target=java.lang.String\ getWebpage()

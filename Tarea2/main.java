@@ -32,6 +32,8 @@ public class main
             
             switch (option) { 
                 case 1:
+                     System.out.println("id:");
+                     String id = scaner.nextLine();
                      System.out.println("nombre:");
                      String nombre = scaner.nextLine();
                      System.out.println("direccion:");
@@ -47,16 +49,28 @@ public class main
                      String foto = "foto.jpg";
                      System.out.println("tipo de usuario 1(estudiante) - 2(empresa/institucion):");
                      int user = scaner.nextInt();
-                    
-                     Usuario usuario = new Usuario(nombre, dir, des, correo, tel, contrasenia, foto, user);
+                     scaner.nextLine();
                      
-                    break;
+                     if(user == 2){
+                        
+                         EmpresaInstitucion emp = new EmpresaInstitucion(id, nombre, dir, des, correo, tel, contrasenia, foto, user);
+                         System.out.println("empresa "+emp.getNombre()+" creada");
+                        
+                    }
+                    else{
+                        System.out.println("Universidad:");
+                        String uni = scaner.nextLine();
+                        String cv = "cv.pdf";
+                        Estudiante est = new Estudiante(id, nombre, dir, des, correo, tel, contrasenia, foto, user, uni, cv);
+                        System.out.println("estudiante "+est.getNombre()+" creado");
+                    }
+                        
+                break;
+                    
                 case 2:
                      System.out.println("Ingrese ID de la empresa:");
                      int idempresa = scaner.nextInt();
                      scaner.nextLine();
-                     
-                     
                     break;
                 case 3:
                     

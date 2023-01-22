@@ -8,6 +8,7 @@
 public class Usuario
 {
     // instance variables - replace the example below with your own
+    private String id;
     private String nombre;
     private String direccion;
     private String descripcion;
@@ -20,10 +21,11 @@ public class Usuario
     /**
      * Constructor for objects of class Usuario
      */
-    public Usuario( String nombre, String direccion, String descripcion, String correo, String telefono, String contrasenia, String foto,
+    public Usuario( String id, String nombre, String direccion, String descripcion, String correo, String telefono, String contrasenia, String foto,
     int tipoUsuario)
     {
         // initialise instance variables
+        this.id = id; 
         this.nombre = nombre;
         this.direccion = direccion;
         this.descripcion = descripcion;
@@ -32,6 +34,11 @@ public class Usuario
         this.contrasenia = contrasenia;
         this.foto = foto;
         this.tipoUsuario = tipoUsuario;
+    }
+    public String getId()
+    {
+        // put your code here
+        return id;
     }
     
     public String getNombre()
@@ -64,7 +71,7 @@ public class Usuario
         return foto;
     }
     
-    public int gettipoUsuario(){
+    public int getTipoUsuario(){
         return tipoUsuario;
     }
 }

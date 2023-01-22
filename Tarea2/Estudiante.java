@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
  */
 public class Estudiante extends Usuario
 {
-    private String nombre;
     private String universidad;
     private String curriculum;
     private ArrayList<Postulacion> postulaciones;
@@ -23,18 +22,14 @@ public class Estudiante extends Usuario
     /**
      * Constructor for objects of class Estudiante
      */
-    public Estudiante(String nombre, String direccion, String descripcion, String correo, String telefono, String contrasenia, String foto,
+    public Estudiante(String id, String nombre, String direccion, String descripcion, String correo, String telefono, String contrasenia, String foto,
     int tipoUsuario, String universidad, String curriculum)
     {
-        super(nombre, direccion, descripcion, correo, telefono, contrasenia, foto, tipoUsuario);
+        super(id, nombre, direccion, descripcion, correo, telefono, contrasenia, foto, tipoUsuario);
         this.universidad = universidad;
         this.curriculum = curriculum;
         postulaciones = new ArrayList<Postulacion>();
         pasantias = new ArrayList<Pasantia>();
-    }
-    
-    public String getNombreEstudiante(){
-        return nombre;
     }
 
     public String getUniversidad(){

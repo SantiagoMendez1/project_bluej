@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Pasantia
 comment0.text=\n\ Write\ a\ description\ of\ class\ Pasant\u00EDa\ here.\n\ \n\ @author\ (Henry\ Mantilla,\ Santigo\ Mendez)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=Pasantia()
+comment1.params=cargo\ descripcion\ empresainstitucion
+comment1.target=Pasantia(java.lang.String,\ java.lang.String,\ EmpresaInstitucion)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Pasant\u00EDa\n
 comment2.params=
 comment2.target=int\ getNumeroDePostulaciones()
