@@ -57,9 +57,18 @@ public class Estudiante extends Usuario
         return postulaciones.size();
     }
     
-    //public ArrayList<Pasantia> buscarPasantia(String palabraClave){
-        
-    //}
+    public ArrayList<Pasantia> buscarPasantia(String palabraClave){ 
+        ArrayList<Pasantia> resultadosBusqueda = new ArrayList<Pasantia>();
+        for(Pasantia p : resultadosBusqueda){
+            if(p.getCargo() != null && p.getCargo().contains(palabraClave)){
+               resultadosBusqueda.add(p); 
+            } 
+            else if(p.getDescripcion() != null & p.getDescripcion().contains(palabraClave)){
+                resultadosBusqueda.add(p);
+            }
+        }
+        return resultadosBusqueda;
+    }
     
     public boolean cancelarPostulacion(String pasantia){
         postulaciones.remove(pasantia);
