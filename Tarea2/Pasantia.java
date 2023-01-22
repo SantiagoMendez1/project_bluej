@@ -10,7 +10,7 @@ public class Pasantia
     // instance variables - replace the example below with your own
     private String cargo;
     private String descripcion;
-    private EmpresaInstitucion empresainstitucion;
+    private String IdEmpresaInstitucion;
     private ArrayList<Postulacion> postulaciones;
 
     /**
@@ -19,8 +19,7 @@ public class Pasantia
     public Pasantia(){
         this.cargo = cargo;
         this.descripcion = descripcion;
-        empresainstitucion = new EmpresaInstitucion();
-        postulaciones = new ArrayList<Postulacion>();
+        this.IdEmpresaInstitucion= IdEmpresaInstitucion;
     }
 
     public int getNumeroDePostulaciones(){

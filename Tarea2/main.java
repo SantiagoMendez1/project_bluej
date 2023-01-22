@@ -28,13 +28,34 @@ public class main
             
             System.out.println("hola, por favor ingresa la opcion que desees");
             option = scaner.nextInt();
+            scaner.nextLine();
             
             switch (option) { 
                 case 1:
                      System.out.println("nombre:");
                      String nombre = scaner.nextLine();
+                     System.out.println("direccion:");
+                     String dir = scaner.nextLine();
+                     System.out.println("descripcion:");
+                     String des = scaner.nextLine();
+                     System.out.println("correo:");
+                     String correo = scaner.nextLine();
+                     System.out.println("telefono:");
+                     String tel = scaner.nextLine();
+                     System.out.println("contraseña:");
+                     String contrasenia = scaner.nextLine();
+                     String foto = "foto.jpg";
+                     System.out.println("tipo de usuario 1(estudiante) - 2(empresa/institucion):");
+                     int user = scaner.nextInt();
+                    
+                     Usuario usuario = new Usuario(nombre, dir, des, correo, tel, contrasenia, foto, user);
+                     
                     break;
                 case 2:
+                     System.out.println("Ingrese ID de la empresa:");
+                     int idempresa = scaner.nextInt();
+                     scaner.nextLine();
+                     
                      
                     break;
                 case 3:
