@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Usuario
+public abstract class Usuario
 {
     // instance variables - replace the example below with your own
     private String id;

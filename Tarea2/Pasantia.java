@@ -10,13 +10,13 @@ public class Pasantia
     // instance variables - replace the example below with your own
     private String cargo;
     private String descripcion;
-    private EmpresaInstitucion empresainstitucion;
+    private String empresainstitucion;
     private ArrayList<Postulacion> postulaciones;
 
     /**
      * Constructor for objects of class Pasantía
      */
-    public Pasantia(String cargo, String descripcion, EmpresaInstitucion empresainstitucion){
+    public Pasantia(String cargo, String descripcion, String empresainstitucion){
         this.cargo = cargo;
         this.descripcion = descripcion;
         this.empresainstitucion = empresainstitucion;
@@ -33,5 +33,6 @@ public class Pasantia
         public String getDescripcion(){
         return descripcion;
     }
+    
     
 }

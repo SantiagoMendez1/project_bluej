@@ -16,7 +16,7 @@ public class Estudiante extends Usuario
     private String universidad;
     private String curriculum;
     private ArrayList<Postulacion> postulaciones;
-    private ArrayList<Pasantia> pasantias;
+    private ArrayList<Pasantia> resultadosBusqueda;
 
 
     /**
@@ -29,7 +29,7 @@ public class Estudiante extends Usuario
         this.universidad = universidad;
         this.curriculum = curriculum;
         postulaciones = new ArrayList<Postulacion>();
-        pasantias = new ArrayList<Pasantia>();
+        resultadosBusqueda= new ArrayList<Pasantia>();
     }
 
     public String getUniversidad(){
@@ -41,10 +41,10 @@ public class Estudiante extends Usuario
     }
     
     public boolean realizarPostulacion(String pasantia, String aspirante){
-        
+        //postulaciones = new ArrayList<Postulacion>();
         LocalDateTime fecha = java.time.LocalDateTime.now();
         postulaciones.add(new Postulacion(pasantia, aspirante, fecha, "enviado"));
-        //System.out.print(postulaciones.get(1));
+        
         return true;
     }
   
@@ -52,22 +52,23 @@ public class Estudiante extends Usuario
         return postulaciones.size();
     }
     
-    public ArrayList<Pasantia> buscarPasantia(String palabraClave){ 
-        ArrayList<Pasantia> resultadosBusqueda = new ArrayList<Pasantia>();
+    public ArrayList<String> buscarPasantia(String palabraClave, ArrayList<Pasantia> resultadosBusqueda){ 
+        ArrayList<String> resultadosBusquedaFinal = new ArrayList<String>();
         for(Pasantia p : resultadosBusqueda){
             if(p.getCargo() != null && p.getCargo().contains(palabraClave)){
-               resultadosBusqueda.add(p); 
+               resultadosBusquedaFinal.add(p.getCargo()); 
             } 
             else if(p.getDescripcion() != null & p.getDescripcion().contains(palabraClave)){
-                resultadosBusqueda.add(p);
+                resultadosBusquedaFinal.add(p.getCargo());
             }
         }
-        return resultadosBusqueda;
+        
+        return resultadosBusquedaFinal;
     }
     
-    public boolean cancelarPostulacion(String pasantia){
-        postulaciones.remove(pasantia);
-        return true;
+    public int cancelarPostulacion(int indexPasantia){
+        postulaciones.remove(indexPasantia);
+        return postulaciones.size();
     }
     
 }
